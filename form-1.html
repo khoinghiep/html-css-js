@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function onSelected(event) {
+            alert("hello selected")
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="/action_page.php">
+
+        <fieldset>
+            <!-- Nhóm các trường với các đầu vào input có liên quan. -->
+            <legend>Xác định chú thích cho form</legend>
+            <label for="fname">Nhãn ngữ nghĩa bổ trợ cho trường</label>
+            <input type="text" id="name_input" name="name_input" placeholder="Ví dụ : Hoàng Hiệp" disabled /><br><br>
+            <label for="lname">Họ và tên:</label>
+            <input type="text" onselect="onSelected()" id="full_name" name="full_name" placeholder="Bạn cần nhập địa chỉ email" /><br><br>
+            <label for="email">Địa chỉ email:</label>
+            <input type="email" id="email" name="email" /><br><br>
+            <label for="email">Tuổi:</label>
+            <input type="number" id="age" name="age" /><br><br>
+            <label for="tel">Số điện thoại :</label>
+            <input type="tel" id="phone" name="phone" /><br><br>
+            <label for="file">Ảnh đại diện:</label>
+            <input type="file"><br><br>
+            <label for="birthday">Sinh nhật:</label>
+            <input type="date" id="birthday" name="birthday" /><br><br>
+            <label for="birthday">Giờ :</label>
+            <input type="datetime-local" id="time" name="time" /><br><br>
+            <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
+
+    <!-- FORM -->
+
+    <form action="/action_page.php" method="GET" enctype='multipart/form-data' name="question" target="_blank"
+        autocomplete="on">
+
+        <fieldset>
+            <legend>Câu hỏi chắc nghiệm</legend>
+
+            <h3>Danh sách câu hỏi</h3>
+
+            <ol>
+                <li>
+                    <div>
+                        <p> Loài vật nào thông minh nhất trên trái đất</p>
+                    </div>
+                    <select>
+                        <option selected>Lựa chọn đáp án</option>
+                        <option value="0">Con người</option>
+                        <option value="1">Con mèo</option>
+                        <option value="2">Con chuột</option>
+                    </select>
+                </li>
+                <li>
+
+                    <div>
+                        <p> Loài vật nào có tốc độ nhanh nhất trong các loài vật sau</p>
+                    </div>
+                    <select onchage="onSelected(evt)">
+                        <optgroup>
+                            <option selected>Lựa chọn đáp án</option>
+                            <option value="0">Con báo</option>
+                            <option value="1">Con chim cắt</option>
+                            <option value="2">Con MIKE</option>
+                        </optgroup>
+                    </select>
+
+                </li>
+                <li>
+
+                    <div>
+                        <p> Odd one out:</p>
+                    </div>
+
+                    <!-- ckeckbox  - radio -->
+                    <div>
+                        <input type="radio" name="dap_an_cau_3" value="0" />
+                        <label>a. fish</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="dap_an_cau_3" value="1" />
+                        <label>b. pork</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="dap_an_cau_3" value="2" />
+                        <label>c. beef</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="dap_an_cau_3" value="4" />
+                        <label>d. beef</label>
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <div>
+                        <p> 1. gia đình bạn gồm những ai .................?:</p>
+                    </div>
+
+                    <!-- ckeckbox  - radio -->
+                    <div>
+                        <input type="checkbox" name="dap_an_cau_4" value="0" />
+                        <label>a. Cha</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="dap_an_cau_4" value="1" />
+                        <label>b. Mẹ</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="dap_an_cau_4" value="2" />
+                        <label>c. Anh</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="dap_an_cau_4" value="4" />
+                        <label>d. Chị</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="dap_an_cau_4" value="4" />
+                        <label>f. Em</label>
+                    </div>
+
+                </li>
+            </ol>
+
+
+            <div>
+                <textarea placeholder="Gửi thèm lời nhắn của bạn" rows="10" cols="100"></textarea>
+            </div>
+            <div>
+                <button type="button">Gửi câu trả lời 1</button>
+                <input type="submit" value="Lưu câu trả lời">
+            </div>
+
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

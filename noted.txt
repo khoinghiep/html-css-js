@@ -1,0 +1,20 @@
+HTML | Bố trí
+Bố cục trang là một phần của thiết kế đồ họa liên quan đến việc sắp xếp các yếu tố trực quan trên một trang. 
+Bố cục trang được sử dụng để làm cho các trang web trông tốt hơn. 
+Nó thiết lập diện mạo tổng thể, tầm quan trọng tương đối và mối quan hệ giữa các yếu tố đồ họa 
+để đạt được luồng thông tin và chuyển động mắt mượt mà để đạt hiệu quả hoặc tác động tối đa.
+
+
+title: Một phần của giao diện người dùng được sử dụng ở đầu trang. Thẻ <title> được sử dụng để thêm phần tiêu đề trong các trang web.
+nav: Thanh điều hướng giống như danh sách menu. Nó được sử dụng để hiển thị thông tin nội dung bằng siêu liên kết.
+Index / Sidebar: Nó chứa thông tin hoặc quảng cáo bổ sung và không phải lúc nào cũng cần phải được thêm vào trang.
+content: Phần nội dung là phần chính nơi nội dung được hiển thị.
+Chân trang: Phần chân trang chứa thông tin liên hệ và truy vấn khác liên quan đến các trang web. Phần chân trang luôn đặt ở dưới cùng của các trang web. Thẻ <footer>
+ được sử dụng để đặt chân trang trong các trang web.
+
+
+HTML Editor là gì?
+Về bản chất, HTML editor là một trình biên tập văn bản để viết mã HTML cho website. Bất kỳ công cụ text editor nào cũng có thể làm được việc này
+
+
+Atom, Notepad ++, Sublime Text, Adobe Dreamweaver CC
