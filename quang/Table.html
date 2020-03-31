@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+
+<body>
+    <div id="table">
+        <fieldset>
+            <legend>Table Example</legend>
+
+            <!-- categories -->
+            <table border="1">
+                <caption>categories</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lắc tay</td>
+                        <td>Làm từ vàng</td>
+                        <td>admin</td>
+                        <td>admin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lắc chân</td>
+                        <td>Làm từ bạc</td>
+                        <td>admin</td>
+                        <td>admin</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- products -->
+            <table border="1">
+                <caption>products</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>category_id</th>
+                        <th>active_until</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lắc tay ...</td>
+                        <td>Bền, đẹp</td>
+                        <td>1</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lắc chân....</td>
+                        <td>Tinh xảo</td>
+                        <td>2</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>category_id</th>
+                        <th>active_until</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- product_images -->
+            <table border="1">
+                <caption>product_images</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>name</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Tên</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>name</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- product_pdfs -->
+            <table border="1">
+                <caption>product_pdfs</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>name</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Tên</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>name</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- orders -->
+            <table border="1">
+                <caption>orders</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>transaction_id</th>
+                        <th>user_id</th>
+                        <th>total_cost</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2000000</td>
+                        <td>1</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>transaction_id</th>
+                        <th>user_id</th>
+                        <th>total_cost</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- order_item -->
+            <table border="1">
+                <caption>order_item</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>transaction_id</th>
+                        <th>product_id</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>variation_id</th>
+                        <th>variation_name</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2000000</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>Name</td>
+                        <td>1</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>transaction_id</th>
+                        <th>product_id</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>variation_id</th>
+                        <th>variation_name</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- variations -->
+            <table border="1">
+                <caption>variations</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>stock</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Name</td>
+                        <td>2000000</td>
+                        <td>5</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>stock</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- users -->
+            <table border="1">
+                <caption>users</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>email</th>
+                        <th>address</th>
+                        <th>password</th>
+                        <th>access_level</th>
+                        <th>validation_code</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Khanh</td>
+                        <td>Nguyen</td>
+                        <td>khanh@gmail.com</td>
+                        <td>HCM</td>
+                        <td>123456</td>
+                        <td>admin</td>
+                        <td>AD1</td>
+                        <td>1</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>email</th>
+                        <th>address</th>
+                        <th>password</th>
+                        <th>access_level</th>
+                        <th>validation_code</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- cart_items -->
+            <table border="1">
+                <caption>cart_items</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>quantity</th>
+                        <th>user_id</th>
+                        <th>variation_id</th>
+                        <th>variation_name</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Name</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>product_id</th>
+                        <th>quantity</th>
+                        <th>user_id</th>
+                        <th>variation_id</th>
+                        <th>variation_name</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- settings -->
+            <table border="1">
+                <caption>settings</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>contact_firstname</th>
+                        <th>contact_lastname</th>
+                        <th>contact_gender</th>
+                        <th>contact_email</th>
+                        <th>contact_number</th>
+                        <th>show_contact_name</th>
+                        <th>show_contact_email</th>
+                        <th>show_contact_number</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Khanh</td>
+                        <td>Nguyen</td>
+                        <td>Nam</td>
+                        <td>khanh@gmail.com</td>
+                        <td>01293238821</td>
+                        <td>K</td>
+                        <td>0</td>
+                        <td>020</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>contact_firstname</th>
+                        <th>contact_lastname</th>
+                        <th>contact_gender</th>
+                        <th>contact_email</th>
+                        <th>contact_number</th>
+                        <th>show_contact_name</th>
+                        <th>show_contact_email</th>
+                        <th>show_contact_number</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- pages -->
+            <table border="1">
+                <caption>pages</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>user_id</th>
+                        <th>title</th>
+                        <th>slug</th>
+                        <th>body</th>
+                        <th>meta_description</th>
+                        <th>status</th>
+                        <th>featured_image</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Tiêu đề</td>
+                        <td>SLug</td>
+                        <td>Nội dung</td>
+                        <td>Mô tả</td>
+                        <td>1</td>
+                        <td>URL</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>user_id</th>
+                        <th>title</th>
+                        <th>slug</th>
+                        <th>body</th>
+                        <th>meta_description</th>
+                        <th>status</th>
+                        <th>featured_image</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br />
+            <br />
+
+            <!-- messages -->
+            <table border="1">
+                <caption>messages</caption>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>subject</th>
+                        <th>message</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Khanh</td>
+                        <td>khanh@gmail.com</td>
+                        <td>Lĩnh vực</td>
+                        <td>Tin nhắn</td>
+                        <td>1</td>
+                        <td>30/03/2020</td>
+                        <td>30/03/2020</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>subject</th>
+                        <th>message</th>
+                        <th>status</th>
+                        <th>created</th>
+                        <th>modified</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </div>
+
+    <div id="form">
+        <form action="# name=" question" target="_blank">
+            <fieldset>
+                <legend>Câu hỏi chắc nghiệm</legend>
+                <h3>Danh sách câu hỏi</h3>
+                <ol>
+                    <li>
+                        <div>
+                            <p>Nếu bạn nhìn thấy con chim đang đậu trên nhánh cây, làm sao để lấy nhánh cây mà không làm
+                                động con chim?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau1" value="0" />
+                            <label>a. Bắt chim bỏ ra ngoài</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau1" value="1" />
+                            <label>b. Đợi chim bay đi.</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau1" value="2" />
+                            <label>c. Ru chim ngủ rồi lấy</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau1" value="3" />
+                            <label>d. Cứ đến mà lấy</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Từ gì mà 100% người Việt Nam đều phát âm sai?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau2" value="0" />
+                            <label>a. Đúng</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau2" value="1" />
+                            <label>b. Sai</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Miệng rộng lớn nhưng không nói một từ, là con gì?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau3" value="0" />
+                            <label>a. Con cá voi</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau3" value="1" />
+                            <label>b. Con khỉ đột</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau3" value="2" />
+                            <label>c. Con sông/label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau3" value="3" />
+                            <label>d. Con voi</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Có bao nhiêu chữ C trong câu sau: "Cơm, canh, cá, tất cả em đều thích"?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau4" value="0" />
+                            <label>a. 1</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau4" value="1" />
+                            <label>b. 2</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau4" value="2" />
+                            <label>c. 3</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau4" value="3" />
+                            <label>d. 4</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Loại nước giải khát nào chứa Canxi và Sắt?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau5" value="0" />
+                            <label>a. CoCa</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau5" value="1" />
+                            <label>b. Pepsi</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau5" value="2" />
+                            <label>c. Cafe</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau5" value="3" />
+                            <label>d. Sinh tố</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Cái gì luôn đi đến mà không bao giờ đến nơi?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau6" value="0" />
+                            <label>a. Cơn gió</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau6" value="1" />
+                            <label>b. Tình yêu</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau6" value="2" />
+                            <label>c. Ngày mai</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau6" value="3" />
+                            <label>d. Không biết là cái gì</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>8 chia 4 = ?</p>
+                        </div>
+                        <div>
+                            <input type="radio" checked="true" name="cau7" value="0" />
+                            <label>a. 1/4</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau7" value="1" />
+                            <label>b. 1/2</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau7" value="2" />
+                            <label>c. 3/4</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau7" value="4" />
+                            <label>d. 4/3</label>
+                        </div>
+                    </li>
+                    <li>    
+                        <div>
+                            <p>Có 2 người cha và 2 người con cùng chia đều số tiền là 27 nghìn. Hỏi mỗi người được bao nhiều?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau8" value="0" />
+                            <label>a. 6,75</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau8" value="1" />
+                            <label>b. 7</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau8" value="2" />
+                            <label>c. 7,5</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau8" value="4" />
+                            <label>d. 9</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Cái gì mà đi thì nằm, đứng cũng nằm, nhưng nằm lại đứng?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau9" value="0" />
+                            <label>a. Cái bàn</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau9" value="1" />
+                            <label>b. Cái ghế</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau9" value="2" />
+                            <label>c. Bàn chân</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau9" value="4" />
+                            <label>d. Bàn tay</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Chồng người da đen, vợ người da trắng vừa sinh một đứa bé, răng của nó màu gì?</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="cau10" value="0" />
+                            <label>a. Trắng</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau10" value="1" />
+                            <label>b. Đen</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau10" value="2" />
+                            <label>c. Vàng</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="cau10" value="4" />
+                            <label>d. Không có màu</label>
+                        </div>
+                    </li>
+                </ol>
+                <div>
+                    <button id="show" type="button">Hiển thị câu trả lời</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="VIE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 2</title>
+    <style media="screen">
+      table{
+        border-collapse:collapse;
+        width: 100%;
+      }
+
+      td,th{
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 15px;
+      }
+
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+
+      th{
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>CATEGORIES</caption>
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Created</th>
+          <th>Modified</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>integer (11)</td>
+            <td>varchar (128)</td>
+            <td>text</td>
+            <td>datetime</td>
+            <td>timestamp</td>
+          </tr>
+
+          <tr>
+          <td>2</td>
+          <td>Nhat Quang</td>
+          <td>Can Tho</td>
+          <td>Id = 2</td>
+          <td>ID = 2</td>
+          </tr>
+        </tbody>
+
+    </table>
+
+    <br> <br>
+
+    <table>
+
+      <caption>PRODUCTS</caption>
+
+      <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Categories_ID</th>
+        <th>Active_Until</th>
+        <th>Created</th>
+        <th>Modified</th>
+      </thead>
+
+      <tbody>
+        <td>integer (11)</td>
+        <td>varchar (512)</td>
+        <td>text</td>
+        <td>integer (11)</td>
+        <td>datetime</td>
+        <td>datetime</td>
+        <td>timestamp</td>
+      </tbody>
+
+    </table>
+    <br>
+    <br>
+    <table>
+
+    <caption>PRODUCTS_images</caption>
+      <thead>
+        <th>ID</th>
+        <th>PRODUCTS_ID</th>
+        <th>Name</th>
+        <th>Created</th>
+        <th>Modified</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>integer (11)</td>
+          <td>integer (11)</td>
+          <td>varchar (512)</td>
+          <td>datetime</td>
+          <td>timestamp</td>
+        </tr>
+      </tbody>
+      </table>
+      <br>
+      <br>
+      <table>
+
+      <caption>Order_Items</caption>
+        <thead>
+          <th>ID</th>
+          <th>Transaction_ID</th>
+          <th>Product_ID</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Variation_id</th>
+          <th>Variation_name</th>
+          <th>Created</th>
+          <th>Modified</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>integer (11)</td>
+            <td>integer (11)</td>
+            <td>integer (11)</td>
+            <td>decimal (10,2)</td>
+            <td>integer (11)</td>
+            <td>integer (11)</td>
+            <td>varchar (128)</td>
+            <td>datetime</td>
+            <td>timestamp</td>
+          </tr>
+        </tbody>
+        </table>
+        <br>
+        <br>
+        <table>
+
+        <caption>Order</caption>
+          <thead>
+            <th>ID</th>
+            <th>Transaction_ID</th>
+            <th>User_ID</th>
+            <th>Total_cost</th>
+            <th>Status</th>
+            <th>Create</th>
+            <th>Modified</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>integer (11)</td>
+              <td>varchar (128)</td>
+              <td>integer (11)</td>
+              <td>decimal (10,2)</td>
+              <td>varchar (16)</td>
+              <td>datetime</td>
+              <td>timestamp</td>
+            </tr>
+          </tbody>
+          </table>
+          <br>
+          <br>
+          <table>
+
+          <caption>Users</caption>
+            <thead>
+              <th>ID</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>Contact_number</th>
+              <th>Address</th>
+              <th>Password</th>
+              <th>Access_level</th>
+              <th>Validation_code</th>
+              <th>Status</th>
+              <th>Created</th>
+              <th>Modified</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>integer (11)</td>
+                <td>varchar (512)</td>
+                <td>varchar (512)</td>
+                <td>varchar (512)</td>
+                <td>varchar (512)</td>
+                <td>text </td>
+                <td>varchar (1024)</td>
+                <td>varchar (128)</td>
+                <td>text</td>
+                <td>integer (11)</td>
+                <td>datetime</td>
+                <td>timestamp</td>
+              </tr>
+            </tbody>
+            </table>
+            <br>
+            <br>
+            <table>
+
+            <caption>PRODUCTS_pdfs</caption>
+              <thead>
+                <th>ID</th>
+                <th>Product_ID</th>
+                <th>Name</th>
+                <th>Created</th>
+                <th>Modified</th>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>integer (11)</td>
+                  <td>integer (11)</td>
+                  <td>varchar (512)</td>
+                  <td>datetime</td>
+                  <td>timestamp</td>
+                </tr>
+              </tbody>
+              </table>
+
+              <br>
+              <br>
+              <table>
+
+              <caption>Variation</caption>
+                <thead>
+                  <th>ID</th>
+                  <th>Product_ID</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Stock</th>
+                  <th>Created</th>
+                  <th>Modified</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>integer (11)</td>
+                    <td>integer (11)</td>
+                    <td>varchar (128)</td>
+                    <td>decimal (10,2)</td>
+                    <td>integer (11)</td>
+                    <td>datetime</td>
+                    <td>timestamp</td>
+                  </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <table>
+
+                <caption>Cart_items</caption>
+                  <thead>
+                    <th>ID</th>
+                    <th>Product_ID</th>
+                    <th>Quantity</th>
+                    <th>User_ID</th>
+                    <th>Variation_id</th>
+                    <th>Variation_name</th>
+                    <th>Created</th>
+                    <th>Modified</th>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>integer (11)</td>
+                      <td>integer (11)</td>
+                      <td>integer (11))</td>
+                      <td>integer (11)</td>
+                      <td>integer (11)</td>
+                      <td>varchar (128)</td>
+                      <td>datetime</td>
+                      <td>timestamp</td>
+                    </tr>
+                  </tbody>
+                  </table>
+
+                  <br>
+                  <br>
+                  <table>
+
+                  <caption>Messages</caption>
+                    <thead>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Subject</th>
+                      <th>Message</th>
+                      <th>Status</th>
+                      <th>Created</th>
+                      <th>Modified</th>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>integer</td>
+                        <td>varchar (512)</td>
+                        <td>varchar (512)</td>
+                        <td>varchar (512)</td>
+                        <td>text</td>
+                        <td>integer (2)</td>
+                        <td>datetime</td>
+                        <td>timestamp</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <table>
+
+                    <caption>Pages</caption>
+                      <thead>
+                        <th>ID</th>
+                        <th>User_ID</th>
+                        <th>Title</th>
+                        <th>Slug</th>
+                        <th>Body</th>
+                        <th>Meta_description</th>
+                        <th>Status</th>
+                        <th>Featured_image</th>
+                        <th>Created</th>
+                        <th>Modified</th>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>integer(11)</td>
+                          <td>integer (11)</td>
+                          <td>varchar (512)</td>
+                          <td>varchar (512)</td>
+                          <td>text</td>
+                          <td>text</td>
+                          <td>integer (11)</td>
+                          <td>varchar (512)</td>
+                          <td>datetime</td>
+                          <td>Modified</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                      <br>
+                      <br>
+                      <table>
+
+                      <caption>SETTINGS</caption>
+                        <thead>
+                          <th>ID</th>
+                          <th>Contact_Firstname</th>
+                          <th>Contact_Lastname</th>
+                          <th>Contact_Gender</th>
+                          <th>Contact_Email</th>
+                          <th>Contact_Number</th>
+                          <th>Show_Contact_Name</th>
+                          <th>Show_Contact_Email</th>
+                          <th>Show_Contact_Number</th>
+                          <th>Created</th>
+                          <th>Modified</th>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>integer(11)</td>
+                            <td>varchar (512)</td>
+                            <td>varchar (512)</td>
+                            <td>integer (11)</td>
+                            <td>varchar (512)</td>
+                            <td>varchar (512)</td>
+                            <td>integer (2)</td>
+                            <td>integer (2)</td>
+                            <td>integer (2)</td>
+                            <td>datetime</td>
+                            <td>Modified</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                        <br>
+                        <br>
+                        <hr>
+
+                        <table>
+                          <caption>CATEGORIES</caption>
+                            <thead>
+                              <th>CategoriesID</th>
+                              <th>CATEGORIESNAME</th>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>integer(11)</td>
+                                <td>varchar (512)</td>
+                              </tr>
+
+                        </table>
+
+
+  </body>
+</html>
