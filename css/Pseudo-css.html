@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các lớp default mặc định của element mô tả trạng thái đặc biệt của element - class đặc biệt của một phần tử.
+    </title>
+
+    <!-- 37 Class DEFAULT in elment class -->
+    <style type="text/css">
+        /* div:hover {
+            background-color: #FF00FF;
+        }
+
+ */
+
+
+
+
+        /* Liên kết ở trạng thái bình thường */
+        a {
+            color: #0000FF;
+        }
+
+
+        /* liên kết này đang được di chuyển chuột lên */
+        a:hover {
+            color: brown;
+        }
+
+        /* liên kết này đang kích vào */
+        a:active {
+            color: green;
+        }
+
+        /* liên kết này đã kích vào trước đó  */
+        a:visited {
+            color: yellow;
+        }
+
+        /* thêm nội dung vào trong phía sau của thẻ chứa văn bản */
+        p::after {
+            content: "yo ";
+        }
+
+        /* thêm nội dung vào trong phía trước của thẻ chứa văn bản */
+        p::before {
+            content: "hi ";
+        }
+
+
+        /* Chọn input checkbox with ckecked */
+        input:checked {
+            box-shadow: 1px 1px 6px #FF00FF;
+        }
+
+        input:disabled {
+            background: brown;
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        input:enabled {}
+
+        /* khi input được người dùng di chuột tập trung vào */
+        input:focus {
+            background: #f1f1f1;
+            color: green;
+        }
+
+        input:in-range {}
+
+        input:out-of-range {}
+
+        input:valid {}
+
+        input:invalid {}
+
+        input:option {}
+
+        input:required {}
+
+        input:read-only {}
+
+        input:read-write {}
+
+        div:emptye {}
+
+
+
+        /* BỘ CHỌN THỨ TỰ CỦA N CỦA THẺ P*/
+        p::first-letter {}
+
+        p::first-line {}
+
+        p:first-of-type {}
+
+        p:last-of-type {}
+
+        p:lang(en) {}
+
+        :not(span) {}
+
+
+        /* CHỌN THẺ tag ở ĐẦU TIÊN */
+        p:first-child {
+            color: #FF00FF
+        }
+
+        /* CHỌN THẺ tag ở  cuối cùng */
+        p:last-child {
+            color: #0000FF
+        }
+
+        /* chọn thẻ tag theo vị trí với pseudo class - taget tới thẻ số p vị trí thứ 2  */
+        p:nth-child(2) {
+            color: green
+        }
+
+        /* Bỏ qua vị trí n chỉ tác động vào vị trí 1 và 3 bỏ qua 2 phần tử. */
+        p:nth-child(3n+1) {
+            color: yellow;
+        }
+
+        /* chọn phần tử thứ 2 từ cuối lên */
+        p:nth-last-child(2) {
+            background: yellow;
+        }
+
+        /* Chọn phần tử thứ 2 của loại thẻ p */
+        p:nth-of-type(2) {
+            background: red;
+        }
+
+        /* Chọn phần tử thứ 2 từ dưới lên của loại thẻ p */
+        p:nth-last-of-type(2) {
+            font-size: 22px;
+        }
+
+        /* Chọn duy nhất phần tử đầu tiên của loại thẻ p */
+        p:only-of-type {}
+
+        /* Chọn duy nhất phần tử của loại thẻ p từ dưới lên */
+        p:only-child {}
+
+
+        /* class đặc biệt */
+        :root {}
+
+        ::selection {}
+
+        :target {}
+    </style>
+</head>
+
+<body>
+    <h1>Cách chọn khác tác động vào thẻ elment sử dụng psedo class</h1>
+    
+    <h3>
+        37 Class DEFAULT Pseudo classes - Các lớp default mặc định của element mô tả trạng thái đặc biệt của element -
+        class đặc biệt của một phần tử.
+    </h3>
+
+
+    <a href="selector2.html" target="_blank"> selector.html </a>
+
+    <!-- P:before and p:after-->
+    <p></p>
+
+    <!-- input checked -->
+
+    <form>
+
+        <fieldset>
+            <input type="checkbox" checked name="input_question" /> Question 1
+            <input type="checkbox" name="input_question" /> Question 2
+        </fieldset>
+
+        <fieldset>
+            <input type="text" name="name" placeholder="Họ và tên " disabled />
+        </fieldset>
+
+        <fieldset>
+            <input type="text" name="email" placeholder="Địa chỉ emai" />
+        </fieldset>
+    </form>
+
+
+    <div>
+        <p class="n-1">
+            n-1
+        </p>
+
+        <p class="n-2">
+            n-2
+        </p>
+
+
+
+        <p class="n-3">
+            n-3
+        </p>
+
+
+
+
+        <p class="n-4">
+            n-4
+        </p>
+
+
+
+        <p class="n-5">
+            n-5
+        </p>
+
+
+        <p class="n-6">
+            n-6
+        </p>
+
+
+
+        <p class="n-7">
+            n-7
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>
